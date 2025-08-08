@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIndustries - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        body {font-family: 'Inter', sans-serif; background-color: #f9fbfd; color: #333; line-height: 1.6;}
+        header {background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(8px); position: fixed; width: 100%; top: 0; z-index: 1000; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; color: white;}
+        header h1 {font-size: 1.8rem; font-weight: 800;}
+        nav a {color: white; text-decoration: none; margin: 0 1rem; font-weight: 600; transition: color 0.3s;}
+        nav a:hover {color: #ffdd57;}
+        .hero {height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x900/?business,technology') center/cover no-repeat; color: white; padding: 2rem;}
+        .hero h2 {font-size: 3.5rem; font-weight: 800; margin-bottom: 1rem;}
+        .hero p {font-size: 1.2rem; max-width: 700px; margin-bottom: 2rem;}
+        .btn {padding: 0.9rem 2rem; background: linear-gradient(90deg, #ffdd57, #ffb347); border: none; border-radius: 50px; font-weight: 600; cursor: pointer; text-decoration: none; color: #333; font-size: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s, background 0.3s;}
+        .btn:hover {background: linear-gradient(90deg, #ffc107, #ff9800); transform: scale(1.05);}
+        .section {padding: 6rem 2rem; max-width: 1200px; margin: auto;}
+        .section h2 {text-align: center; margin-bottom: 3rem; font-size: 2.5rem;}
+        .cards {display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;}
+        .card {background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; transition: transform 0.3s, box-shadow 0.3s;}
+        .card img {width: 80px; margin-bottom: 1rem;}
+        .card:hover {transform: translateY(-8px); box-shadow: 0 15px 40px rgba(0,0,0,0.12);}
+        .shopify {background: #fff7e6; padding: 4rem 2rem; text-align: center; border-radius: 15px; margin-top: 4rem;}
+        footer {background: #111; color: #ccc; text-align: center; padding: 2rem;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AIndustries</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#shop">Shop</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Innovating the Future</h2>
+        <p>We deliver world-class technology, real estate, and business solutions to empower growth and success.</p>
+        <a href="#services" class="btn">Our Services</a>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://img.icons8.com/color/96/real-estate.png" alt="Real Estate Analysis">
+                <h3>Real Estate Analysis</h3>
+                <p>Data-driven property insights for investment, acquisition, and development decisions.</p>
+            </div>
+            <div class="card">
+                <img src="https://img.icons8.com/color/96/web.png" alt="Web Development">
+                <h3>Web Development</h3>
+                <p>High-performance websites that are fast, secure, and visually stunning.</p>
+            </div>
+            <div class="card">
+                <img src="https://img.icons8.com/color/96/combo-chart.png" alt="Data Analytics">
+                <h3>Data Analytics</h3>
+                <p>Transforming raw data into actionable insights that fuel business strategies.</p>
+            </div>
+            <div class="card">
+                <img src="https://img.icons8.com/color/96/marketing.png" alt="Digital Marketing">
+                <h3>Digital Marketing</h3>
+                <p>Boost your brand visibility through targeted, high-impact campaigns.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="shop" class="section shopify">
+        <h2>Shopify Store</h2>
+        <p>Browse our latest products, powered by Shopify’s secure e-commerce platform.</p>
+        <a href="https://yourshopifystore.com" target="_blank" class="btn">Visit Store</a>
+    </section>
+
+    <footer>
+        <p>© 2025 AIndustries. All rights reserved.</p>
+    </footer>
+</body>
+</html>
